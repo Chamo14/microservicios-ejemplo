@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.usuario.service.modelos.Moto;
 
-@FeignClient(name = "moto-service")
+@FeignClient(name = "moto-service", url="http://localhost:8080/moto")
 public interface MotoFeignClient {
 	@PostMapping()
 	public Moto save(@RequestBody Moto moto);
