@@ -50,7 +50,7 @@ public class UsuarioController {
 		return ResponseEntity.ok(nuevoUsuario);
 	}
 	
-	/*@GetMapping("/carros/{usuarioId}")
+	@GetMapping("/carros/{usuarioId}")
 	public ResponseEntity<List<Carro>> listarCarros(@PathVariable("usuarioId") Long usuarioId)
 	{
 		Usuario usuario = usuarioService.getUsuarioById(usuarioId);
@@ -69,7 +69,7 @@ public class UsuarioController {
 		}
 		List<Moto> motos = usuarioService.getMotos(usuarioId);
 		return ResponseEntity.ok(motos);
-	}*/
+	}
 	
 	@PostMapping("/carro/{usuarioId}")
 	public ResponseEntity<Carro> guardarCarro(@PathVariable("usuarioId") Long usuarioId,@RequestBody Carro carro){

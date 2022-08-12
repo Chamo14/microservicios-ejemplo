@@ -39,15 +39,15 @@ public class UsuarioService {
 		return nuevoUsuario;
 	}
 
-	/*public List<Carro> getCarros(Long usuarioId) {
+	public List<Carro> getCarros(Long usuarioId) {
 		List<Carro> carros = restTemplate.getForObject("http://localhost:8002/carro/usuario/" + usuarioId, List.class);
 		return carros;
-	}*/
+	}
 
-	/*public List<Moto> getMotos(Long usuarioId) {
+	public List<Moto> getMotos(Long usuarioId) {
 		List<Moto> motos = restTemplate.getForObject("http://localhost:8003/moto/usuario/" + usuarioId, List.class);
 		return motos;
-	}*/
+	}
 
 	public Carro saveCarro(Long usuarioId, Carro carro) {
 		carro.setUsuarioId(usuarioId);
