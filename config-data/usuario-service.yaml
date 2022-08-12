@@ -18,8 +18,7 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
-      eventConsumerBufferSize: 10  
-      recordFailurePredicate: io.github.robwin.exception.RecordFailurePredicate      
+      eventConsumerBufferSize: 10   
     motosCB:
       registerHealthIndicator: true
       slidingWindowSize: 10
@@ -28,8 +27,7 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
-      eventConsumerBufferSize: 10  
-      recordFailurePredicate: io.github.robwin.exception.RecordFailurePredicate 
+      eventConsumerBufferSize: 10
     todosCB:
       registerHealthIndicator: true
       slidingWindowSize: 10
@@ -38,5 +36,4 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
-      eventConsumerBufferSize: 10 
-      recordFailurePredicate: io.github.robwin.exception.RecordFailurePredicate       
+      eventConsumerBufferSize: 10      
